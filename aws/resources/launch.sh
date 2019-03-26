@@ -8,4 +8,3 @@ sed "s/EKS_VPC/$EKS_VPC/g;s/EKS_SUBNETS/$EKS_SUBNETS/g;s/EKS_SECURITY_GROUP/$EKS
 
 kubectl apply -f eks.yaml
 kubectl apply -f rds.yaml
-kubectl apply -f workload.yaml
