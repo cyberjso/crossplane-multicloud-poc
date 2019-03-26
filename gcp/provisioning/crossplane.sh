@@ -28,7 +28,7 @@ helm install --name crossplane --namespace crossplane-system crossplane-alpha/cr
 # Create a service account so, Crossplane can create objects using it
 gcloud --project $PROJECT_ID iam service-accounts create crossplane-example --display-name "Crossplane - Multi-cloud POC"
 export CONTROL_PANE_IAM_ROLE="crossplane-example@$PROJECT_ID.iam.gserviceaccount.com"
-gcloud --project $PROJECT_ID iam service-accounts keys create --iam-account $CONTROL_PANE_IAM_ROLE key.json
+gcloud --project $PROJECT_ID iam service-accounts keys create --iam-account $CONTROL_PANE_IAM_ROLE ../resources/key.json
 
 # Adding GCP as a cloud provider
 gcloud projects add-iam-policy-binding $PROJECT_ID --member "serviceAccount:$CONTROL_PANE_IAM_ROLE" --role="roles/iam.serviceAccountUser"
