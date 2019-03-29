@@ -14,7 +14,7 @@ POC with script to launch an application running on both AWS and GCP cloud provi
 5. On AWS:
     1. Create an user with the following PolicyName attached: <b> AminstratorAccess</b>
     2. On the <i>Security Credentials</i>, push the button <i>Create Access key</i>. Save access and secret key at <i>~/.aws/credentials</i> as <i>default.</i> profile
-    3. Create a [key pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html) to attach on EC2 instances that will be launched. Upate the [environment file](aws/env.sh)  with the name of the key pair created.
+    3. Create a [key pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html) to attach on EC2 instances that will be launched. Upate the [environment file](aws/resources/env.sh)  with the name of the key pair created.
 
 6. On GCP
     1. Create a project
